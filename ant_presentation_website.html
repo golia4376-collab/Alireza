@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ارائه آموزشی ۱۰ دقیقه‌ای درباره مورچه‌ها؛ زیست‌شناسی، زندگی اجتماعی، ارتباط، لانه‌سازی و اهمیت زیست‌محیطی">
+<title>جهان شگفت‌انگیز مورچه‌ها | ارائه ۱۰ دقیقه‌ای</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#f7f6f0;--ink:#20251d;--muted:#697164;--green:#315c3b;--lime:#c5df8a;--orange:#e49a50;--card:#fffefa;--line:#e5e5d9;--shadow:0 18px 45px rgba(37,54,34,.09)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.95}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(247,246,240,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(49,92,59,.12)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.brand{font-weight:900;display:flex;align-items:center;gap:10px}
+.brand-mark{display:grid;place-items:center;width:40px;height:40px;border-radius:14px;background:var(--green);color:white;font-size:22px}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+nav a:hover{color:var(--green)}
+.hero{padding:70px 0 46px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e9efdf;color:var(--green);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.25;letter-spacing:-1.7px;margin:20px 0}
+h1 span{color:var(--green)}
+.lead{font-size:18px;color:var(--muted);max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 19px;border-radius:14px;font-weight:700;font-size:14px;border:1px solid var(--green)}
+.btn.primary{background:var(--green);color:white}
+.btn.secondary{color:var(--green);background:transparent}
+.hero-art{min-height:365px;border-radius:34px;background:radial-gradient(circle at 70% 25%,#f9d9a7 0 10%,transparent 10.5%),linear-gradient(145deg,#dbe8c8,#9ebc8d);position:relative;overflow:hidden;display:grid;place-items:center}
+.hero-art:before{content:"";position:absolute;width:310px;height:310px;border-radius:50%;border:1px solid rgba(255,255,255,.6);box-shadow:0 0 0 35px rgba(255,255,255,.12),0 0 0 70px rgba(255,255,255,.1)}
+.ant-emoji{font-size:155px;filter:drop-shadow(0 22px 12px rgba(31,49,27,.2));z-index:1;transform:rotate(-18deg)}
+.floating{position:absolute;background:rgba(255,254,250,.88);padding:10px 14px;border-radius:15px;font-size:13px;font-weight:700;box-shadow:var(--shadow)}
+.float-one{top:28px;right:22px}.float-two{bottom:30px;left:20px}.float-three{bottom:90px;right:20px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.stat{padding:18px;background:var(--card);border:1px solid var(--line);border-radius:18px}
+.stat strong{display:block;font-size:25px;color:var(--green);line-height:1.4}
+.stat span{font-size:12px;color:var(--muted)}
+section{padding:52px 0;scroll-margin-top:85px}
+.section-head{max-width:700px;margin-bottom:25px}
+.kicker{color:#7d8d54;font-size:12px;font-weight:800;letter-spacing:1px}
+h2{font-size:clamp(26px,4vw,39px);line-height:1.4;margin:7px 0 10px}
+.section-intro{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 8px 24px rgba(37,54,34,.035)}
+.card-icon{font-size:31px;display:inline-grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#edf2e5;margin-bottom:10px}
+.card h3{margin:0 0 7px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.callout{margin-top:20px;background:var(--green);color:#fff;border-radius:22px;padding:22px 25px;display:flex;align-items:center;gap:18px}
+.callout strong{font-size:24px;color:var(--lime);white-space:nowrap}
+.callout p{margin:0;font-size:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.panel{padding:26px;border-radius:24px;background:var(--card);border:1px solid var(--line)}
+.panel h3{margin-top:0}
+.bullet-list{padding:0 20px 0 0;margin:10px 0}
+.bullet-list li{padding:5px 0;color:var(--muted)}
+.bullet-list li::marker{color:var(--orange)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+.stage{border-radius:18px;background:var(--card);border:1px solid var(--line);padding:18px 14px;text-align:center}
+.stage .emoji{font-size:35px}
+.stage h3{font-size:16px;margin:5px 0}
+.stage p{font-size:12px;color:var(--muted);margin:0}
+.dark-section{background:#202b21;color:#f9f8ef}
+.dark-section .kicker{color:var(--lime)}
+.dark-section .section-intro,.dark-section .card p{color:#c3cabb}
+.dark-section .card{background:#2b392d;border-color:#3c4a3c}
+.dark-section .card-icon{background:#3c4a3c}
+.dark-section .card h3{color:#fff}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fact{display:flex;gap:15px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:19px;padding:19px}
+.fact .icon{font-size:27px}
+.fact p{margin:0;color:#d4dbce;font-size:14px}
+.species{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.species-item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.species-item .emoji{font-size:32px}
+.species-item strong{display:block;margin:4px 0}
+.species-item p{margin:0;font-size:12px;color:var(--muted)}
+.agenda{counter-reset:slide;display:grid;gap:12px}
+.agenda-item{counter-increment:slide;display:grid;grid-template-columns:52px 1fr auto;gap:15px;align-items:center;padding:17px 20px;border:1px solid var(--line);background:var(--card);border-radius:18px}
+.agenda-item:before{content:counter(slide,decimal-leading-zero);display:grid;place-items:center;background:#e9efdf;color:var(--green);width:45px;height:45px;border-radius:14px;font-weight:900}
+.agenda-item h3{font-size:16px;margin:0}
+.agenda-item p{font-size:13px;color:var(--muted);margin:3px 0 0}
+.time{font-size:12px;color:var(--green);background:#edf2e5;border-radius:999px;padding:5px 10px;white-space:nowrap}
+.speech{background:#fff8e9;border:1px solid #f0dfbd;border-radius:22px;padding:24px}
+.speech h3{margin-top:0}
+.speech p{margin-bottom:0}
+.sources{font-size:13px;color:var(--muted)}
+.sources a{text-decoration:underline;text-decoration-color:#a8b89b}
+footer{background:#182119;color:#dfe6d9;padding:28px 0;margin-top:30px}
+footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px}
+@media(max-width:850px){.hero-grid,.two-col{grid-template-columns:1fr}.hero-art{min-height:300px}.cards{grid-template-columns:repeat(2,1fr)}.species{grid-template-columns:repeat(2,1fr)}nav{display:none}}
+@media(max-width:560px){.hero{padding-top:40px}.stats{grid-template-columns:1fr}.cards,.fact-grid{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.agenda-item{grid-template-columns:45px 1fr}.time{grid-column:2;justify-self:start}.callout{display:block}.callout strong{display:block;margin-bottom:5px}.hero-art{min-height:260px}.ant-emoji{font-size:120px}}
+@media print{header,.hero-actions{display:none}body{background:white}.hero{padding:20px 0}section{padding:25px 0}.card,.panel,.stage,.agenda-item{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top"><span class="brand-mark">🐜</span><span>جهان مورچه‌ها</span></a>
+    <nav aria-label="منوی اصلی">
+      <a href="#intro">معرفی</a><a href="#body">بدن</a><a href="#colony">کلونی</a><a href="#life">چرخه زندگی</a><a href="#nature">طبیعت</a><a href="#presentation">برنامه ارائه</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">راهنمای علمی • ارائه ۱۰ دقیقه‌ای</span>
+      <h1>جهانی بزرگ در<br><span>بدنی کوچک</span></h1>
+      <p class="lead">مورچه‌ها حشره‌هایی کوچک‌اند، اما با همکاری، ارتباط شیمیایی و تقسیم کار، جوامعی شگفت‌انگیز می‌سازند. در این صفحه با مهم‌ترین نکته‌ها درباره زندگی آن‌ها آشنا می‌شویم.</p>
+      <div class="hero-actions"><a class="btn primary" href="#presentation">شروع ارائه</a><a class="btn secondary" href="#facts">حقایق جالب</a></div>
+      <div class="stats">
+        <div class="stat"><strong>بیش از ۱۴٬۰۰۰</strong><span>گونه توصیف‌شده از مورچه‌ها</span></div>
+        <div class="stat"><strong>۶ پا</strong><span>مانند دیگر حشرات</span></div>
+        <div class="stat"><strong>۴ مرحله</strong><span>چرخه اصلی زندگی</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="تصویرسازی تزئینی مورچه">
+      <span class="floating float-one">همکاری و تقسیم کار</span><span class="ant-emoji">🐜</span>
+      <span class="floating float-two">ارتباط با فرومون‌ها</span><span class="floating float-three">جامعه‌ای سازمان‌یافته</span>
+    </div>
+  </div>
+</section>
+
+<section id="intro">
+  <div class="container">
+    <div class="section-head"><div class="kicker">01 / معرفی</div><h2>مورچه چیست؟</h2><p class="section-intro">مورچه‌ها حشره‌هایی اجتماعی از خانوادهٔ مورچگان (Formicidae) هستند. آن‌ها تقریباً در بیشتر زیست‌بوم‌های خشکی زندگی می‌کنند و نقش مهمی در تعادل طبیعت دارند.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">🌍</div><h3>پراکندگی گسترده</h3><p>از جنگل و بیابان تا باغ و محیط شهری دیده می‌شوند؛ با این حال در مناطق بسیار سرد و برخی جزیره‌های دورافتاده تنوع کمتری دارند.</p></article>
+      <article class="card"><div class="card-icon">🔬</div><h3>تنوع چشمگیر</h3><p>بیش از ۱۴ هزار گونهٔ زنده تاکنون توصیف شده‌اند و پژوهشگران همچنان گونه‌های تازه‌ای را بررسی و معرفی می‌کنند.</p></article>
+      <article class="card"><div class="card-icon">👥</div><h3>زندگی گروهی</h3><p>بسیاری از کارهای مهم، مثل پیدا کردن غذا و مراقبت از نوزادان، به‌جای یک مورچه به‌وسیلهٔ کلونی انجام می‌شود.</p></article>
+    </div>
+    <div class="callout"><strong>نکتهٔ کلیدی</strong><p>قدرت مورچه‌ها فقط در توان یک فرد نیست؛ همکاری تعداد زیادی مورچه می‌تواند مسئله‌هایی را حل کند که برای یک مورچه دشوار است.</p></div>
+  </div>
+</section>
+
+<section id="body">
+  <div class="container">
+    <div class="section-head"><div class="kicker">02 / ساختار بدن</div><h2>بدن مورچه چگونه کار می‌کند؟</h2><p class="section-intro">بدن مورچه مانند دیگر حشرات به سه بخش اصلی تقسیم می‌شود و هر بخش وظیفه‌ای مشخص دارد.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">🧠</div><h3>سر</h3><p>دارای شاخک‌ها، آرواره‌ها و چشم‌هاست. شاخک‌ها برای لمس و دریافت بوها و پیام‌های شیمیایی اهمیت زیادی دارند.</p></article>
+      <article class="card"><div class="card-icon">🦵</div><h3>سینه و شش پا</h3><p>شش پا به حرکت کمک می‌کنند. پاها به بخش میانی بدن متصل‌اند و در برخی گونه‌ها سازگاری‌های ویژه‌ای دارند.</p></article>
+      <article class="card"><div class="card-icon">🛡️</div><h3>شکم و اسکلت بیرونی</h3><p>اسکلت بیرونی از بدن محافظت می‌کند. مورچه‌ها به‌جای شش، با شبکه‌ای از لوله‌های تنفسی اکسیژن را به بافت‌ها می‌رسانند.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="colony" class="dark-section">
+  <div class="container">
+    <div class="section-head"><div class="kicker">03 / جامعهٔ مورچه‌ها</div><h2>هر عضو، نقشی در کلونی دارد</h2><p class="section-intro">کلونی گروهی از مورچه‌هاست که با هم زندگی می‌کنند. ساختار دقیق آن با توجه به گونه تفاوت دارد.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">👑</div><h3>ملکه</h3><p>در بسیاری از گونه‌ها وظیفهٔ اصلی ملکه تخم‌گذاری است. ملکه معمولاً فرمانده‌ای نیست که به تک‌تک مورچه‌ها دستور بدهد.</p></article>
+      <article class="card"><div class="card-icon">🧺</div><h3>کارگرها</h3><p>معمولاً ماده‌اند و کارهایی مانند جمع‌آوری غذا، ساخت و تعمیر لانه، مراقبت از نوزادان و دفاع از کلونی را انجام می‌دهند.</p></article>
+      <article class="card"><div class="card-icon">🪽</div><h3>نرها و افراد تولیدمثلی</h3><p>نرها معمولاً در جفت‌گیری نقش دارند. در زمان تولیدمثل، در برخی گونه‌ها افراد بالدار از لانه خارج می‌شوند.</p></article>
+    </div>
+    <div class="callout"><strong>تقسیم کار</strong><p>در بعضی گونه‌ها کارگرها از نظر اندازه و وظیفه تفاوت دارند؛ برای نمونه، افراد بزرگ‌تر ممکن است در دفاع یا شکستن دانه‌های سخت کمک کنند.</p></div>
+  </div>
+</section>
+
+<section id="life">
+  <div class="container">
+    <div class="section-head"><div class="kicker">04 / چرخهٔ زندگی</div><h2>از تخم تا مورچهٔ بالغ</h2><p class="section-intro">مورچه‌ها دگردیسی کامل دارند؛ یعنی در طول رشد، چهار مرحلهٔ متمایز را پشت سر می‌گذارند.</p></div>
+    <div class="timeline">
+      <article class="stage"><div class="emoji">🥚</div><h3>۱. تخم</h3><p>آغاز رشد؛ تخم‌ها معمولاً در بخش امن لانه نگهداری می‌شوند.</p></article>
+      <article class="stage"><div class="emoji">🐛</div><h3>۲. لارو</h3><p>لارو غذا می‌خورد و رشد می‌کند و به مراقبت کارگرها نیاز دارد.</p></article>
+      <article class="stage"><div class="emoji">🫧</div><h3>۳. شفیره</h3><p>در این مرحله بدن به شکل مورچهٔ بالغ تبدیل می‌شود؛ در همهٔ گونه‌ها پیله دیده نمی‌شود.</p></article>
+      <article class="stage"><div class="emoji">🐜</div><h3>۴. بالغ</h3><p>مورچهٔ بالغ وظایف مربوط به نقش خود را در کلونی انجام می‌دهد.</p></article>
+    </div>
+    <p class="section-intro" style="margin-top:17px">مدت رشد به گونه، دما، غذا و شرایط محیطی بستگی دارد. طول عمر نیز یکسان نیست؛ برخی کارگرها مدت نسبتاً کوتاهی و بعضی ملکه‌ها چندین سال زندگی می‌کنند.</p>
+  </div>
+</section>
+
+<section id="communication" class="dark-section">
+  <div class="container">
+    <div class="section-head"><div class="kicker">05 / ارتباط و هوش جمعی</div><h2>بدون حرف زدن، پیام می‌فرستند</h2><p class="section-intro">مورچه‌ها از نشانه‌های شیمیایی و تماس‌های بدنی استفاده می‌کنند و رفتار جمعی آن‌ها می‌تواند بسیار هماهنگ به نظر برسد.</p></div>
+    <div class="fact-grid">
+      <div class="fact"><span class="icon">👃</span><div><h3>فرومون‌ها</h3><p>مواد شیمیایی‌اند که می‌توانند مسیر غذا، هشدار یا اطلاعات مرتبط با کلونی را منتقل کنند.</p></div></div>
+      <div class="fact"><span class="icon">🛤️</span><div><h3>ردیابی مسیر</h3><p>مورچه‌ای که غذا پیدا می‌کند ممکن است مسیر شیمیایی بر جا بگذارد تا دیگران راحت‌تر به منبع غذا برسند.</p></div></div>
+      <div class="fact"><span class="icon">🍯</span><div><h3>تبادل غذا</h3><p>برخی مورچه‌ها غذا را دهان‌به‌دهان مبادله می‌کنند؛ این کار به توزیع غذا و انتقال پیام‌ها کمک می‌کند.</p></div></div>
+      <div class="fact"><span class="icon">🧩</span><div><h3>هوش جمعی</h3><p>هر مورچه اطلاعات محدودی دارد، اما واکنش‌های سادهٔ تعداد زیادی از آن‌ها می‌تواند به نتیجه‌ای پیچیده برسد.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="nest">
+  <div class="container">
+    <div class="section-head"><div class="kicker">06 / لانه و تغذیه</div><h2>خانه‌هایی با شکل‌های متفاوت</h2><p class="section-intro">نوع لانه و رژیم غذایی مورچه‌ها به گونه و محیط زندگی آن‌ها وابسته است.</p></div>
+    <div class="two-col">
+      <div class="panel"><h3>🏠 لانه‌سازی</h3><ul class="bullet-list"><li>بسیاری از گونه‌ها شبکه‌ای از راهروها و اتاقک‌ها را زیر خاک می‌سازند.</li><li>برخی در چوب، تنهٔ درخت یا شکاف‌های طبیعی زندگی می‌کنند.</li><li>مورچه‌های برگ‌بُر از برگ‌ها برای پرورش قارچی که غذای آن‌هاست استفاده می‌کنند.</li><li>مورچه‌های بافنده با کمک لاروهای خود برگ‌ها را به هم متصل می‌کنند.</li></ul></div>
+      <div class="panel"><h3>🍃 غذا و روش‌های تغذیه</h3><ul class="bullet-list"><li>بسته به گونه از دانه‌ها، حشرات، مواد گیاهی، شهد یا مواد غذایی دیگر استفاده می‌کنند.</li><li>بعضی گونه‌ها از شته‌ها مایع شیرین دریافت می‌کنند و در برابر، از آن‌ها محافظت می‌کنند.</li><li>مورچه‌های برگ‌بُر برگ‌ها را مستقیماً به‌عنوان غذای اصلی نمی‌خورند؛ از آن‌ها برای پرورش قارچ استفاده می‌کنند.</li><li>تنوع غذایی به مورچه‌ها کمک می‌کند در زیستگاه‌های گوناگون زنده بمانند.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="nature" class="dark-section">
+  <div class="container">
+    <div class="section-head"><div class="kicker">07 / اهمیت در طبیعت</div><h2>چرا مورچه‌ها مهم‌اند؟</h2><p class="section-intro">مورچه‌ها فقط موجوداتی برای تماشا نیستند؛ فعالیت آن‌ها روی خاک، گیاهان و دیگر جانوران اثر می‌گذارد.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">🌱</div><h3>بهبود خاک</h3><p>حفر تونل‌ها به جابه‌جایی خاک و در برخی شرایط به گردش هوا و نفوذ آب کمک می‌کند.</p></article>
+      <article class="card"><div class="card-icon">🌰</div><h3>پخش دانه‌ها</h3><p>برخی مورچه‌ها دانه‌ها را جابه‌جا می‌کنند و در پراکندگی گیاهان نقش دارند.</p></article>
+      <article class="card"><div class="card-icon">♻️</div><h3>بازیافت مواد</h3><p>با خوردن لاشهٔ حشرات و مواد آلی، در تجزیه و چرخهٔ مواد غذایی مشارکت می‌کنند.</p></article>
+      <article class="card"><div class="card-icon">🕷️</div><h3>بخشی از زنجیرهٔ غذایی</h3><p>هم شکارچی و هم طعمه‌اند؛ در نتیجه به تعادل جمعیت بسیاری از جانداران کمک می‌کنند.</p></article>
+      <article class="card"><div class="card-icon">🌳</div><h3>اثر بر گیاهان</h3><p>بسته به گونه، ممکن است به پراکندگی گیاهان کمک کنند یا با نگهداری شته‌ها به برخی گیاهان آسیب برسانند.</p></article>
+      <article class="card"><div class="card-icon">⚖️</div><h3>تعادل زیست‌بوم</h3><p>حذف یا کاهش شدید یک گروه از جانداران می‌تواند زنجیره‌ای از تغییرات در محیط ایجاد کند.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="species">
+  <div class="container">
+    <div class="section-head"><div class="kicker">08 / نمونه‌هایی از گونه‌ها</div><h2>همهٔ مورچه‌ها شبیه هم نیستند</h2><p class="section-intro">چند نمونهٔ شناخته‌شده از تنوع رفتار و سازگاری در مورچه‌ها:</p></div>
+    <div class="species">
+      <article class="species-item"><div class="emoji">🖤</div><strong>مورچهٔ سیاه باغی</strong><p>در بسیاری از محیط‌های شهری و باغ‌ها دیده می‌شود.</p></article>
+      <article class="species-item"><div class="emoji">🍂</div><strong>مورچهٔ برگ‌بُر</strong><p>برای پرورش قارچ، قطعات برگ را به لانه می‌برد.</p></article>
+      <article class="species-item"><div class="emoji">🌿</div><strong>مورچهٔ بافنده</strong><p>با استفاده از لاروها برگ‌ها را به هم می‌بافد.</p></article>
+      <article class="species-item"><div class="emoji">🔥</div><strong>مورچهٔ آتشین</strong><p>برخی گونه‌های آن مهاجم‌اند و نیش دردناکی دارند.</p></article>
+    </div>
+    <div class="callout"><strong>احتیاط</strong><p>بعضی گونه‌ها می‌توانند نیش بزنند یا گاز بگیرند. مورچه‌های ناشناس را لمس نکنید؛ واکنش حساسیتی شدید به نیش، نیازمند کمک فوری پزشکی است.</p></div>
+  </div>
+</section>
+
+<section id="facts">
+  <div class="container">
+    <div class="section-head"><div class="kicker">09 / نکته‌های جالب</div><h2>چند واقعیت به‌یادماندنی</h2></div>
+    <div class="fact-grid">
+      <div class="fact" style="background:#fffefa;border-color:var(--line)"><span class="icon">💪</span><div><h3>قدرت نسبت به اندازه</h3><p>بسیاری از مورچه‌ها می‌توانند بارهایی سنگین‌تر از وزن بدن خود حمل کنند؛ مقدار دقیق به گونه و شرایط بستگی دارد.</p></div></div>
+      <div class="fact" style="background:#fffefa;border-color:var(--line)"><span class="icon">🧭</span><div><h3>یافتن راه</h3><p>برخی گونه‌ها از نشانه‌های محیطی و نشانه‌های آسمانی برای جهت‌یابی کمک می‌گیرند.</p></div></div>
+      <div class="fact" style="background:#fffefa;border-color:var(--line)"><span class="icon">❄️</span><div><h3>گذراندن فصل سرد</h3><p>رفتار زمستانی بسته به گونه و اقلیم متفاوت است؛ بعضی فعالیت خود را کم می‌کنند و در لانه پناه می‌گیرند.</p></div></div>
+      <div class="fact" style="background:#fffefa;border-color:var(--line)"><span class="icon">🐜</span><div><h3>مورچه یا موریانه؟</h3><p>مورچه‌ها شاخک‌های خمیده و کمر باریک دارند؛ موریانه‌ها معمولاً شاخک‌های صاف و کمر پهن‌تری دارند.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="presentation">
+  <div class="container">
+    <div class="section-head"><div class="kicker">برنامهٔ پیشنهادی ارائه</div><h2>چطور این مطالب را در ۱۰ دقیقه ارائه کنیم؟</h2><p class="section-intro">به‌جای خواندن تمام متن، تیترها را نمایش دهید و نکته‌های زیر را با زبان خودتان توضیح دهید.</p></div>
+    <div class="agenda">
+      <div class="agenda-item"><div><h3>شروع و معرفی مورچه‌ها</h3><p>با این پرسش شروع کنید: «چطور موجودی به این کوچکی می‌تواند جامعه‌ای منظم بسازد؟» سپس تعریف و تنوع را بگویید.</p></div><span class="time">۱ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>ساختار بدن</h3><p>سه بخش بدن، شش پا، شاخک‌ها و اسکلت بیرونی را توضیح دهید.</p></div><span class="time">۱ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>زندگی اجتماعی و تقسیم کار</h3><p>نقش ملکه، کارگرها و نرها را معرفی کنید و توضیح دهید که نقش‌ها در گونه‌های مختلف فرق دارند.</p></div><span class="time">۱٫۵ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>چرخهٔ زندگی</h3><p>چهار مرحلهٔ تخم، لارو، شفیره و بالغ را با یک تصویر یا نمودار نشان دهید.</p></div><span class="time">۱ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>ارتباط، لانه و غذا</h3><p>فرومون‌ها، مسیر غذا، لانه‌های گوناگون و پرورش قارچ در مورچه‌های برگ‌بُر را توضیح دهید.</p></div><span class="time">۲ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>نقش در طبیعت و گونه‌ها</h3><p>بهبود خاک، پراکندگی دانه‌ها، بازیافت مواد و یک نمونه از گونه‌های متفاوت را بیان کنید.</p></div><span class="time">۱٫۵ دقیقه</span></div>
+      <div class="agenda-item"><div><h3>حقایق جالب و نتیجه‌گیری</h3><p>یک یا دو واقعیت جالب بگویید و جمع‌بندی کنید: همکاری، ارتباط و تقسیم کار راز موفقیت مورچه‌هاست.</p></div><span class="time">۲ دقیقه</span></div>
+    </div>
+    <div class="speech" style="margin-top:22px">
+      <h3>متن پیشنهادی برای شروع و پایان</h3>
+      <p><strong>شروع:</strong> «وقتی به مورچه نگاه می‌کنیم، شاید فقط یک حشرهٔ کوچک ببینیم؛ اما در زندگی این موجود، همکاری و نظم بسیار زیادی وجود دارد. امروز می‌خواهیم ببینیم مورچه‌ها چگونه زندگی می‌کنند و چرا برای طبیعت مهم‌اند.»</p>
+      <p><strong>پایان:</strong> «مورچه‌ها به ما نشان می‌دهند که ارتباط مؤثر، تقسیم کار و همکاری می‌تواند از رفتارهای ساده، نتیجه‌ای پیچیده بسازد. با وجود اندازهٔ کوچکشان، آن‌ها یکی از گروه‌های مهم و اثرگذار در بسیاری از زیست‌بوم‌ها هستند.»</p>
+    </div>
+  </div>
+</section>
+
+<section id="sources">
+  <div class="container">
+    <div class="section-head"><div class="kicker">برای مطالعهٔ بیشتر</div><h2>منابع علمی</h2><p class="section-intro">برای دقیق‌تر کردن ارائه یا افزودن منابع به پایان سایت، از این منابع استفاده کنید.</p></div>
+    <div class="panel sources">
+      <ul class="bullet-list">
+        <li>Schultheiss, P. et al. (2022). The abundance, biomass, and distribution of ants on Earth. <em>PNAS</em>. <a href="https://doi.org/10.1073/pnas.2201550119" target="_blank" rel="noopener">مشاهده مقاله</a></li>
+        <li>UC Agriculture and Natural Resources — اطلاعات عمومی دربارهٔ زیست‌شناسی و رفتار مورچه‌ها: <a href="https://ipm.ucanr.edu/PMG/PESTNOTES/pn7411.html" target="_blank" rel="noopener">راهنمای مورچه‌ها</a></li>
+        <li>Annual Review of Entomology — پژوهش‌های مروری دربارهٔ زیست‌شناسی و بوم‌شناسی مورچه‌ها: <a href="https://doi.org/10.1146/annurev-ento-011118-111923" target="_blank" rel="noopener">مقالهٔ مروری</a></li>
+      </ul>
+      <p>یادآوری: شمار گونه‌های توصیف‌شده با کشف گونه‌های جدید تغییر می‌کند؛ عدد «بیش از ۱۴ هزار» تقریبی است.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="container foot"><span>جهان شگفت‌انگیز مورچه‌ها</span><span>صفحهٔ آموزشی فارسی • مناسب ارائهٔ ۱۰ دقیقه‌ای</span><a href="#top">بازگشت به بالا ↑</a></div></footer>
+</body>
+</html>
